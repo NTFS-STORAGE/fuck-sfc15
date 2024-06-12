@@ -1,0 +1,63 @@
+body {
+    background-color: #0d0d0d;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-top: 40px;
+    text-shadow: 0px 0px 10px #00ff00;
+    animation: flicker 5s infinite alternate;
+}
+
+header h2 {
+    font-size: 2em;
+    margin-top: 5px;
+    text-shadow: 0px 0px 5px #00ff00;
+}
+
+section h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-shadow: 0px 0px 5px #00ff00;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 6px;
+    background-color: #1a1a1a;
+    border: 1px solid #00ff00;
+    display: block;
+    text-align: left;
+    font-size: 1em;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+        color: #00ff00;
+    }
+    50% {
+        opacity: 0.4;
+        color: #ff00ff;
+    }
+    100% {
+        opacity: 1;
+        color: #00ffff;
+    }
+}
