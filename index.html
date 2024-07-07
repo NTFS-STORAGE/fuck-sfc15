@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta property="og:title" content="FUCK SFC15">
   <meta property="og:description" content="Are you fed up with SFC15's late replies and Tired of his high prices?">
   <meta property="og:image" content="https://i.imgur.com/XmdF2Sb.png">
@@ -11,6 +12,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FUCK SFC15</title>
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Popup container */
+    .popup {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 2;
+    }
+
+    /* Popup content */
+    .popup-content {
+      margin: 15% auto;
+      padding: 20px;
+      width: 80%;
+      max-width: 400px;
+      background: white;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    /* Close button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+
   <script>
     function redirectToIndex3() {
       window.location.href = 'dwc15.html';
@@ -21,26 +65,46 @@
     }
 
     function copyToClipboard() {
-      const litecoinAddress = "ltc1qdfeagh8hdtfx80x9tavapcksezejpflyx96g8g";
+      const litecoinAddress = "YOUR_LITECOIN_ADDRESS";
       navigator.clipboard.writeText(litecoinAddress).then(function() {
         alert("Litecoin address copied to clipboard!");
       }, function(err) {
         console.error("Could not copy text: ", err);
       });
     }
+
+    // Function to open the popup
+    function openPopup() {
+      document.getElementById("donation-popup").style.display = "block";
+    }
+
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById("donation-popup").style.display = "none";
+    }
+
+    // Open the popup when the page loads
+    window.onload = function() {
+      openPopup();
+    }
   </script>
 </head>
 <body>
- <div style="text-align: center; background-color: yellow; padding: 5px; margin-bottom: 10px;">
-      <h2>DONATE SO I CAN CONTINUE HOSTING (click litecoin logo)</h2>
-    </div>
   <div class="container">
     <header>
       <h1 class="flicker-text">NTFS</h1>
       <h2>FUCK SFC 15 (online)</h2>
     </header>
 
-  
+    <!-- Popup for donation -->
+    <div id="donation-popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Donate so I can continue hosting</h2>
+        <p>Click the Litecoin logo to copy the address</p>
+        <img src="https://crypto.com/price/coin-data/icon/LTC/color_icon.png" alt="Litecoin" style="width: 100px; cursor: pointer;" onclick="copyToClipboard()">
+      </div>
+    </div>
 
     <section>
       <h3>Why I HATE SFC15!1!</h3>
@@ -57,7 +121,6 @@
         <li>I LEEK SFC DATABAZ!11 SCROL DOWN AND CLIK BUTON!11!1</li>
       </ul>
     </section>
-    
     <div align='center'>
       <a href='https://www.youareanidiot.cc'>
         <img src='https://www.free-website-hit-counter.com/c.php?d=4&id=172338&s=39' border='0' alt=''>
@@ -77,12 +140,10 @@
     </a>
     <h1>FR</h1>
     <h1>Fuck SFC15</h1>
-
     <!-- New button for redirection -->
     <div style="text-align: center; margin-top: 20px;">
       <button onclick="redirectToIndex2()">Go to SFC DATABAZ!11!</button>
     </div>
-
     <!-- begin wwww.htmlcommentbox.com -->
     <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
     <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
@@ -90,16 +151,9 @@
       /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24DYR5fnF1dEyiiegtwDRqq."+"&opts=16798&num=10&ts=1718137957961");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/
     </script>
     <!-- end www.htmlcommentbox.com -->
-
     <a href="https://youareanidiot.cc/" title="click here for black men twerking!!111!">
       <img src="https://i.imgur.com/TIJ0GNq.png">
     </a>
-
-    <!-- Litecoin donation section -->
-    <div style="text-align: center; margin-top: 20px;">
-      <h3>Donate Litecoin</h3>
-      <img src="https://cryptologos.cc/logos/litecoin-ltc-logo.png" alt="Litecoin" style="width: 100px; cursor: pointer;" onclick="copyToClipboard()">
-    </div>
   </div>
 </body>
 </html>
